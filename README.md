@@ -27,11 +27,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Netbird Connect
         id: netbird
         uses: Lupise/netbird-connect@1
         with:
-          setup-key: ${{ secrets.NETBIRD_SETUP_KEY }}
+          setup-key: ${{ secrets.GH_RUNNERS_NETBIRD_SETUP_KEY }}
 ```

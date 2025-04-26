@@ -20,7 +20,7 @@ jobs:
       - name: Netbird Action
         uses: ./
         with:
-          setup-key: ${{ secrets.NETBIRD_SETUP_KEY }}
+          setup-key: ${{ secrets.GH_RUNNERS_NETBIRD_SETUP_KEY }}
 
       - name: Check for connection status
         run:
