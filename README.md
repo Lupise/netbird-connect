@@ -31,7 +31,7 @@ jobs:
 
       - name: Netbird Connect
         id: netbird
-        uses: Lupise/netbird-connect@v1
+        uses: Lupise/netbird-connect@1
         with:
           setup-key: ${{ secrets.NETBIRD_SETUP_KEY }}
 ```
