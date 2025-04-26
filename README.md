@@ -35,6 +35,4 @@ jobs:
         uses: Lupise/netbird-connect@v1
         with:
           setup-key: ${{ secrets.NETBIRD_SETUP_KEY }}
-          hostname: 'my-custom-hostname'
-          management-url: 'https://my-netbird-management-url.com'
-          args: '--custom-arg value'
+```
