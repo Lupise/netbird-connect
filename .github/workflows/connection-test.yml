@@ -25,3 +25,7 @@ jobs:
       - name: Check for connection status
         run:
           netbird status
+
+      - name: Test NetBird protected url connection
+        run: |
+          curl -i https://${{ vars.TEST_URL }}
