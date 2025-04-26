@@ -3,13 +3,14 @@ name: netbird-connect
 on:
   push:
     branches:
-      - master
+      - main
   pull_request:
     branches:
       - '*'
 
 jobs:
-  build:
+  Connection_test:
+    environment: prod
     runs-on: ubuntu-latest
     steps:
       - name: Check out code
