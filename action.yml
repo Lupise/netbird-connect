@@ -8,10 +8,6 @@ inputs:
     description: 'Sets a custom hostname that is visible from Netbird Dashboard'
     required: false
     default: ''
-  management-url:
-    description: 'Management Service URL [http|https]://[host]:[port] (default "https://app.netbird.io:443")'
-    required: false
-    default: 'https://app.netbird.io:443'
   args:
     description: 'Optional additional arguments to `netbird up`'
     required: false
@@ -44,7 +40,7 @@ runs:
         if [ -z "${HOSTNAME}" ]; then
           HOSTNAME="github-$(cat /etc/hostname)"
         fi
-        sudo netbird up --setup-key=${SETUP_KEY} --hostname=${HOSTNAME} --management-url=${MANAGEMENT_URL} ${ADDITIONAL_ARGS}
+        sudo netbird up --setup-key=${SETUP_KEY} --hostname=${HOSTNAME} ${ADDITIONAL_ARGS}
     - name: Wait for Netbird to connect
       shell: bash
       run: |
