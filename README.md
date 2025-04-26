@@ -6,11 +6,11 @@ This GitHub Action allows you to connect your workflow to your Netbird network. 
 
 ## Inputs
 
-| Input           | Description                                                              | Required | Default Value                     |
-| --------------- | ------------------------------------------------------------------------ | -------- |-----------------------------------|
-| `setup-key`     | Setup key obtained from the Management Service Dashboard (used to register the peer). | Yes      | N/A                               |
-| `hostname`      | Sets a custom hostname that is visible from the Netbird Dashboard. If not provided, a default hostname will be generated. | No       | ' '                               |
-| `args`          | Optional additional arguments to pass to the `netbird up` command.     | No       | ' '                               |
+| Input       | Description                                                                                                               | Required | Default Value |
+|-------------|---------------------------------------------------------------------------------------------------------------------------|----------|---------------|
+| `setup-key` | Setup key obtained from the Management Service Dashboard (used to register the peer).                                     | Yes      | N/A           |
+| `hostname`  | Sets a custom hostname that is visible from the Netbird Dashboard. If not provided, a default hostname will be generated. | No       | ' '           |
+| `args`      | Optional additional arguments to pass to the `netbird up` command.                                                        | No       | ' '           |
 
 ## Example Usage
 
