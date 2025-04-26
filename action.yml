@@ -46,5 +46,5 @@ runs:
       run: |
           while [ -z "$(sudo netbird status | grep 'Management: Connected')" ]; do
           echo "Waiting for Netbird to connect..."
-          sleep 30
+          sleep 60
           done
