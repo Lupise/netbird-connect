@@ -48,4 +48,4 @@ runs:
             echo "Waiting for Netbird to connect..."
             sleep 5
           done
-          sleep 60
+          sleep 30
